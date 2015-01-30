@@ -1,0 +1,10 @@
+Licenses
+
+
+ * Software Name: Boost C++ libraries
+   ** License Name: Boost Software License 1.0
+   ** License File: share/licenses/BOOST_1.0.txt
+
+ * Software Name: Lua
+   ** License Name: MIT license
+   ** License File: share/licenses/MIT.txt

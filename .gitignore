@@ -1,0 +1,4 @@
+#platform specific builds
+build/
+#output directory
+lib/
