@@ -1,7 +1,7 @@
 # Luapath
 Luapath is a small C++ library that can load  and traverse .lua files.
 
-#Usage
+# Usage
 Let's say we have the following lua file called **test.lua**: 
 ```lua
 skinnedModels = {
@@ -22,14 +22,14 @@ barbarian = {
 		}
 	},
 ```
-###Load file
+### Load file
 ```cpp
 #include <luapath/luapath.hpp>
 ...
 luapath::LuaState myfile("test.lua");
 ```
 If the file can't be loaded a **lua_state_exception** exception is thrown.
-###Traversal
+### Traversal
 Traversing the file is very easy. 
 "**.**" is used to traverse string keys and "**#**" is used to traverse number keys. If there is an error traversing a **path_lookup_exception** exception is thrown.
 
@@ -69,7 +69,7 @@ while (additionalAnimTable.getTable(string("#") + std::to_string(additionalAnimN
 	additionalAnimNum++;
 }
 ```
-#Installation
+# Installation
 Include the **include** folder for the header files.
 The library has a dependency on the lua C++ library so you need to include and link against it too. It is available under the **3rdparty** folder.
 
@@ -80,5 +80,5 @@ include_directories(${LUAPATH_INCLUDE_DIR})
 target_link_libraries(${APP_NAME} ${LUAPATH_LIBRARIES})
 ```
 
-#To Do
+# To Do
 Add functionality to escape the characters "." and "#" in the search string
